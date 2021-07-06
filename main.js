@@ -5,7 +5,10 @@ var sum = firstCard + secondCard ;
 var age = 22;
 var hasBlackJack = false;
 var message = "";
-// if statement on sum range
+
+//start game function
+function startGame(){
+    // if statement on sum range
 if (sum <= 20){
     message ="Do you want to draw a new card?";
 } else if (sum === 21){
@@ -21,4 +24,4 @@ if (age <= 21){
     console.log("You are welcome!")
 }
 console.log(message)
-console.log(hasBlackJack);
+}
