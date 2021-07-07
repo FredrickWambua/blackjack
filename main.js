@@ -9,9 +9,12 @@ var messageEl = document.getElementById("message-el");
 var sumEl = document.getElementById("sum-el");
 var cardEl =document.getElementById("cards-el");
 
-
-//start game function
+// starting game function
 function startGame(){
+    renderGame()
+}
+//rendering game function
+function renderGame(){
     cardEl.textContent = `Cards: ${firstCard}, ${secondCard}`
     sumEl.textContent = `Sum : ${sum}`
     // if statement on sum range
