@@ -1,6 +1,7 @@
 // variables
 var firstCard = 13;
 var secondCard = 11;
+var cards =[firstCard, secondCard]
 var sum = firstCard + secondCard ;
 var age = 22;
 var hasBlackJack = false;
@@ -15,7 +16,7 @@ function startGame(){
 }
 //rendering game function
 function renderGame(){
-    cardEl.textContent = `Cards: ${firstCard}, ${secondCard}`
+    cardEl.textContent = `Cards: ${cards[0]}, ${cards[1]}`
     sumEl.textContent = `Sum : ${sum}`
     // if statement on sum range
 if (sum <= 20){
@@ -35,7 +36,13 @@ function newCard(){
     console.log("Drawing a new card from the deck");
     let card = 8;
     sum += card;
-    startGame();
+    cards.push(card)
+    console.log(cards)
+    renderGame();
+}
+
+for (let i= 0; i < cards.length; i++){
+    console.log(cards[i])
 }
 
 // if statement on age range
