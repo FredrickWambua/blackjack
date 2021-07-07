@@ -1,6 +1,6 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: green;
+    background-color: #016F32;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -25,4 +25,6 @@ button {
     padding-bottom: 5px;
     font-weight: bolder;
     border-radius: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
